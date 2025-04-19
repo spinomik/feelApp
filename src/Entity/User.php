@@ -2,12 +2,15 @@
 
 namespace App\Entity;
 
+use App\Enum\Diet;
+use App\Enum\Gender;
 use App\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Types\UuidType;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Uid\Uuid;
+use Symfony\Component\Validator\Constraints as Assert;
 
 #[ORM\Entity(repositoryClass: UserRepository::class)]
 #[ORM\UniqueConstraint(name: 'UNIQ_IDENTIFIER_EMAIL', fields: ['email'])]
@@ -20,6 +23,8 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private ?Uuid $id = null;
 
     #[ORM\Column(length: 180)]
+    #[Assert\NotBlank(message: "Email nie może być pusty.")]
+    #[Assert\Email(message: "Podaj poprawny adres email.")]
     private ?string $email = null;
 
     /**
@@ -33,6 +38,34 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      */
     #[ORM\Column]
     private ?string $password = null;
+
+    #[ORM\Column(length: 255)]
+    #[Assert\NotBlank(message: "Imię jest wymagane.")]
+    #[Assert\Length(max: 255)]
+    private ?string $firstName = null;
+
+    #[ORM\Column(length: 255)]
+    #[Assert\NotBlank(message: "Nazwisko jest wymagane.")]
+    #[Assert\Length(max: 255)]
+    private ?string $lastName = null;
+
+    #[ORM\Column(enumType: Gender::class)]
+    #[Assert\NotNull(message: "Wybierz płeć.")]
+    private ?Gender $gender = null;
+
+    #[ORM\Column(length: 20)]
+    #[Assert\NotBlank]
+    #[Assert\Length(min: 9, max: 20)]
+    #[Assert\Regex(
+        pattern: '/^\+?[0-9\s\-]*$/',
+        message: 'Numer telefonu może zawierać tylko cyfry, spacje, myślniki i opcjonalnie + na początku.'
+    )]
+    private ?string $phoneNumber = null;
+
+    #[ORM\Column(enumType: Diet::class)]
+
+    #[Assert\NotNull(message: "Wybierz rodzaj diety.")]
+    private ?Diet $diet = null;
 
     public function getId(): ?Uuid
     {
@@ -107,5 +140,65 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     {
         // If you store any temporary, sensitive data on the user, clear it here
         // $this->plainPassword = null;
+    }
+
+    public function getFirstName(): ?string
+    {
+        return $this->firstName;
+    }
+
+    public function setFirstName(string $firstName): static
+    {
+        $this->firstName = $firstName;
+
+        return $this;
+    }
+
+    public function getLastName(): ?string
+    {
+        return $this->lastName;
+    }
+
+    public function setLastName(string $lastName): static
+    {
+        $this->lastName = $lastName;
+
+        return $this;
+    }
+
+    public function getGender(): ?Gender
+    {
+        return $this->gender;
+    }
+
+    public function setGender(Gender $gender): static
+    {
+        $this->gender = $gender;
+
+        return $this;
+    }
+
+    public function getPhoneNumber(): ?string
+    {
+        return $this->phoneNumber;
+    }
+
+    public function setPhoneNumber(string $phoneNumber): static
+    {
+        $this->phoneNumber = $phoneNumber;
+
+        return $this;
+    }
+
+    public function getDiet(): ?Diet
+    {
+        return $this->diet;
+    }
+
+    public function setDiet(Diet $Diet): static
+    {
+        $this->diet = $Diet;
+
+        return $this;
     }
 }
