@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+{% block title %}O nas!{% endblock %}
+{% block body %}
+<section class="container my-5">
+    <!-- Tytuł i opis -->
+    <div class="text-center mb-5">
+        <h1 class="display-4">O NAS</h1>
+        <p class="lead">
+            NAJWIĘKSZE W POLSCE WYJAZDY TANECZNE
+            <br>A właściwie taneczno-rozwojowe. Z miłości do tańca i poszerzania świadomości.
+        </p>
+    </div>
+
+    <!-- Treść -->
+    <div class="row mb-5">
+        <div class="col-lg-6">
+            <p><strong>Zajęcia taneczne:</strong> bachata, salsa kubańska, zouk, salsa liniowa, urban kiz i kizomba. Nauka tańca latino nigdy nie była tak prosta!</p>
+            <p><strong>Zajęcia rozwojowe:</strong> nauka masażu powięziowego, tantra, praca z oddechem, medytacje, relaksacje czy joga. Stale się rozwijamy i zawsze zaskakujemy czymś nowym.</p>
+            <p>Mimo że podczas naszych obozów tanecznych spotyka się kilka setek dorosłych, opinie zadowolonych uczestników mówią jasno – atmosfera jest rodzinna! Pełna serdeczności, ciepła i radości.</p>
+            <p><strong>OBÓZ TANECZNY – MOTYW:</strong> Każdy #FeelTheHoliday ma inny temat przewodni – skupiamy się na nieco innych aspektach tańca i życia.</p>
+            <p><strong>KTO POPROWADZI ZAJĘCIA TAŃCA:</strong> Najlepsi instruktorzy z całej Polski!</p>
+            <p><strong>DLA KOGO WARSZTATY TANECZNE:</strong> Zapraszamy każdego, kto ma ochotę podszkolić swój warsztat taneczny lub dopiero zacząć tę piękną przygodę.</p>
+            <p><strong>DLA KOGO WARSZTATY ROZWOJOWE:</strong> Zrób sobie wakacje od życia! Poznaj lepiej siebie, odpocznij lub zanurz się w tu i teraz.</p>
+            <p><strong>IMPREZY LATINO:</strong> Dla najwytrwalszych trwają dosłownie do śniadania!</p>
+            <p><strong>3 WYJAZDY TANECZNE DLA DOROSŁYCH W ROKU:</strong> Edycja wiosenna, wakacyjna i jesienna – każda z unikalnym klimatem i motywem przewodnim.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="{{ asset('images/about/organizators.jpg') }}" alt="Obóz taneczny" class="img-fluid rounded shadow">
+        </div>
+    </div>
+
+    <!-- Linki do mediów społecznościowych -->
+    <div class="text-center my-5">
+        <h4>Obserwuj nas na:</h4>
+            <div class="elementor-social-icons-wrapper elementor-grid text-center" style="margin-top: 30px;">
+    <span class="elementor-grid-item">
+        <a class="elementor-icon elementor-social-icon elementor-social-icon-facebook" href="https://www.facebook.com/FeelTheSalsa/" target="_blank" rel="nofollow">
+            <i class="bi bi-facebook" style="font-size: 36px; background-color: #3b5998; color: white; padding: 20px; border-radius: 50%;"></i>
+        </a>
+    </span>
+    <span class="elementor-grid-item">
+        <a class="elementor-icon elementor-social-icon elementor-social-icon-youtube" href="https://www.youtube.com/channel/UCbCX0Bkd8ZO439OLNC84dGw" target="_blank" rel="nofollow">
+            <i class="bi bi-youtube" style="font-size: 36px; background-color: #ff0000; color: white; padding: 20px; border-radius: 50%;"></i>
+        </a>
+    </span>
+    <span class="elementor-grid-item">
+        <a class="elementor-icon elementor-social-icon elementor-social-icon-instagram" href="https://www.instagram.com/feelthesalsa/" target="_blank" rel="nofollow">
+            <i class="bi bi-instagram" style="font-size: 36px; background-color: #e4405f; color: white; padding: 20px; border-radius: 50%;"></i>
+        </a>
+    </span>
+</div>
+    </div>
+</section>
+{% endblock %}
