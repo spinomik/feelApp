@@ -1,3 +1,4 @@
+{% trans_default_domain 'partials' %}
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 	<div class="container-fluid">
 		<a class="navbar-brand" href="{{ path('app_home_page') }}">
@@ -9,46 +10,46 @@
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 				<li class="nav-item">
-					<a class="nav-link" href="{#{{ path('change_me') }}#}">Najblisze Eventy</a>
+					<a class="nav-link" href="{#{{ path('change_me') }}#}">{{ 'navbar.events'|trans }}</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="{#{{ path('change_me') }}#}">Archiwum</a>
+					<a class="nav-link" href="{#{{ path('change_me') }}#}">{{ 'navbar.archive'|trans }}</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="{#{{ path('change_me') }}#}">Kontakt</a>
+					<a class="nav-link" href="{#{{ path('change_me') }}#}">{{ 'navbar.contact'|trans }}</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="{{ path('app_about') }}">O nas</a>
+					<a class="nav-link" href="{{ path('app_about') }}">{{ 'navbar.about'|trans }}</a>
 				</li>
 			</ul>
 			<ul class="navbar-nav mb-2 mb-lg-0">
 				<li class="nav-item">
-					<a class="btn btn-primary me-2" href="{#{{ path('change_me') }}#}">Kup Bilety</a>
+					<a class="btn btn-primary me-2" href="{#{{ path('change_me') }}#}">{{ 'navbar.buy'|trans }}</a>
 				</li>
 				<li class="nav-item">
-					<a class="btn btn-danger me-2" href="{#{{ path('change_me') }}#}">Panel Ogarniacza</a>
+					<a class="btn btn-danger me-2" href="{#{{ path('change_me') }}#}">{{ 'navbar.crew_panel'|trans }}</a>
 				</li>
 				{% if app.user %}
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="{#{{ path('change_me') }}#}" id="userDropdown" role="button" data-bs-toggle="dropdown">
-							Zalogowany jako
+							{{ 'navbar.logged'|trans }}
 							{{ app.user.firstName }}
 						</a>
 						<ul class="dropdown-menu dropdown-menu-end">
 							<li>
-								<a class="dropdown-item" href="{#{{ path('change_me') }}#}">Profil</a>
+								<a class="dropdown-item" href="{#{{ path('change_me') }}#}">{{ 'navbar.profile'|trans }}</a>
 							</li>
 							<li>
-								<a class="dropdown-item" href="{{ path('app_logout') }}">Wyloguj</a>
+								<a class="dropdown-item" href="{{ path('app_logout') }}">{{ 'navbar.logout'|trans }}</a>
 							</li>
 						</ul>
 					</li>
 				{% else %}
 					<li class="nav-item">
-						<a class="nav-link" href="{{ path('app_login') }}">Zaloguj się</a>
+						<a class="nav-link" href="{{ path('app_login') }}">{{ 'navbar.login'|trans }}</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="{{ path('app_register') }}">Zarejestruj się</a>
+						<a class="nav-link" href="{{ path('app_register') }}">{{ 'navbar.register'|trans }}</a>
 					</li>
 				{% endif %}
 				{% include 'partials/_language_selector.html.twig' %}

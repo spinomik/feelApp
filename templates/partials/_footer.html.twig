@@ -1,3 +1,4 @@
+{% trans_default_domain 'partials' %}
 <footer class="bg-dark text-light py-3">
 	<div class="container">
 		<div
@@ -9,60 +10,54 @@
 					<li>
 						<a class="text-light text-decoration-none" href="{#{{ path('change_me') }}#}">
 							<i class="bi bi-link"></i>
-							Regulamin serwisu internetowego</a>
+							{{ 'footer.reg'|trans }}</a>
 					</li>
 					<li>
 						<a class="text-light text-decoration-none" href="{#{{ path('change_me') }}#}">
 							<i class="bi bi-link"></i>
-							Regulamin wydarzenia</a>
+							{{ 'footer.reg_event'|trans }}</a>
 					</li>
 					<li>
 						<a class="text-light text-decoration-none" href="{#{{ path('change_me') }}#}">
 							<i class="bi bi-link"></i>
-							Polityka prywatności</a>
+							{{ 'footer.privacy'|trans }}</a>
 					</li>
 					<li>
 						<a class="text-light text-decoration-none" href="{#{{ path('change_me') }}#}">
 							<i class="bi bi-link"></i>
-							Procedura bezpieczeństwa</a>
+							{{ 'footer.security'|trans }}</a>
 					</li>
 					<li>
 						<a class="text-light text-decoration-none" href="{{ links.facebook_friends }}" target="_blank">
 							<i class="bi bi-link"></i>
-							Grupa Przyjaciele FTS</a>
+							{{ 'footer.fb_friends'|trans }}</a>
 					</li>
 					<li>
 						<a class="text-light text-decoration-none" href="{{ links.facebook }}" target="_blank">
 							<i class="bi bi-link"></i>
-							Fanpage</a>
+							{{ 'footer.fanpage'|trans }}</a>
 					</li>
 					<li>
 						<a class="text-light text-decoration-none" href="{{ links.instagram }}" target="_blank">
 							<i class="bi bi-link"></i>
-							Instagram</a>
+							{{ 'footer.instagram'|trans }}</a>
 					</li>
 				</ul>
 			</div>
 
 			<!-- Dane firmy i newsletter -->
 			<div class="col-md-4 mb-2">
-				<p class="mb-3">
-					© 2013–2024 FEELTHEHOLIDAY sp. z o.o.<br>
-					ul. Niedźwiedzia 29B, Warszawa<br>
-					NIP: 5213920112<br>
-					REGON: 388205750<br>
-					KRS: 0000883357
-				</p>
+				<p class="mb-3">{{ 'footer.company'|trans|raw }}</p>
 				<p>
 					<a href="{#{{ path('change_me') }}#}" class="btn btn-outline-light btn-sm">
-						Dołącz do newslettera
+						{{ 'footer.newsletter'|trans }}
 					</a>
 				</p>
 			</div>
 
 			<!-- Płatności -->
 			<div class="col-md-4 text-center">
-				<p class="">DOSTĘPNE FORMY PŁATNOŚCI:</p>
+				<p class="">{{ 'footer.payments'|trans }}</p>
 				<img src="{{ asset('images/formy-platnosci.png') }}" alt="Formy płatności" class="img-fluid" style="max-width: 100%; height: auto;">
 			</div>
 		</div>
@@ -70,7 +65,7 @@
 		<div class="text-center">
 			<small>&copy;
 				{{ "now"|date("Y") }}
-				FeelTheHoliday – Wszelkie prawa zastrzeżone</small>
+				{{ 'footer.copyright'|trans }}</small>
 		</div>
 	</div>
 </footer>

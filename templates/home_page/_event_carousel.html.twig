@@ -1,3 +1,4 @@
+{% trans_default_domain 'home_page' %}
 <div id="eventCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
 	<div class="carousel-inner">
 
@@ -35,10 +36,10 @@
 
 	<button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
 		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		<span class="visually-hidden">Poprzedni</span>
+		<span class="visually-hidden">{{ 'event_carousel.prev' |trans}}</span>
 	</button>
 	<button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
 		<span class="carousel-control-next-icon" aria-hidden="true"></span>
-		<span class="visually-hidden">Następny</span>
+		<span class="visually-hidden">{{ 'event_carousel.next' |trans}}</span>
 	</button>
 </div>

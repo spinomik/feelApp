@@ -1,0 +1,22 @@
+home:
+  name: 'FeelTheHoliday'
+  headline: 'Dance trips for adults'
+  subtitle: 'Upcoming dance events & workshops:'
+  call_to_action: 'Feel the vibe of dance camps!'
+  love_dance: 'Do you love dancing? So do we!'
+  experience: 'Dance trips for adults for years'
+  about_us: 'We’ve been here for over a decade! Feel the Salsa has been active since 2012. Dance trips have been our specialty since 2014.<br>We love teaching you to dance and organizing the biggest dance getaways in Poland.'
+
+archive:
+  button: 'Check out photos from the past'
+
+event_carousel:
+  prev: 'Previous'
+  next: 'Next'
+
+newsletter:
+  order: 'Subscribe to our free newsletter and be the first to know about our sports events, festivals, and other dance projects!'
+  first_name: 'First name'
+  email: 'Email address'
+  agreed: 'By subscribing, I agree to receive information about products, services, and promotions from FEELTHEHOLIDAY sp. z o.o. and accept the privacy policy.'
+  save: 'Sign me up!'

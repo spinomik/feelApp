@@ -1,0 +1,22 @@
+home:
+  name: 'FeelTheHoliday'
+  headline: 'Wyjazdy taneczne dla dorosłych'
+  subtitle: 'Najbliższe wydarzenia taneczne & warsztaty:'
+  call_to_action: 'Poczuj klimat obozów tanecznych!'
+  love_dance: 'Kochasz taniec? to tak, jak my!'
+  experience: 'Wyjazdy taneczne dla dorosłych od lat'
+  about_us: 'Jesteśmy dla was już ponad dekadę! feel the salsa działa od 2012 roku. Wyjazdy taneczne to nasza specjalność od 2014.<br>Uwielbiamy uczyć was tańca i organizować największe w polsce wyjazdy taneczne dla dorosłych.'
+
+archive:
+  button: 'Obejrzyj zdjęcia z dawnych czasów'
+
+event_carousel:
+  prev: 'Poprzedni'
+  next: 'Następny'
+
+newsletter:
+  order: 'Zamów darmowy newsletter, a jako pierwszy dowiesz się o naszych wydarzeniach sportowych, festiwalach i innych projektach tanecznych!'
+  first_name: 'Imię'
+  email: 'Adres Email'
+  agreed: 'Zapisując się wyrażam zgodę na otrzymanie informacji o produktach, usługach i promocjach od FEELTHEHOLIDAY sp. z o.o. oraz akceptuję politykę prywatności.'
+  save: 'Zapisuję się!'

@@ -1,26 +1,40 @@
 {% extends 'base.html.twig' %}
+{% trans_default_domain 'home_page' %}
 
-{% block title %}FeelTheHoliday{% endblock %}
+{% block title %}
+	{{ 'home.name' |trans }}
+{% endblock %}
 {% block body %}
-{% embed 'partials/_header.html.twig' %}
-    {% block header_title %}WYJAZDY TANECZNE DLA DOROSŁYCH{% endblock %}
-    {% block header_subtitle %}NAJBLIŻSZE WYDARZENIA TANECZNE &amp; WARSZTATY:{% endblock %}
-{% endembed %} 
-{% include 'home_page/_event_carousel.html.twig' %} 
-{% embed 'partials/_header.html.twig' %}
-    {% block header_title %}POCZUJ KLIMAT OBOZÓW TANECZNYCH!{% endblock %}
-    {% block header_subtitle %}{% endblock %}
-{% endembed %} 
-{% include 'home_page/_example_video.html.twig' %}
-{% embed 'partials/_header.html.twig' %}
-    {% block header_title %}KOCHASZ TANIEC? TO TAK, JAK MY!{% endblock %}
-    {% block header_subtitle %}{% endblock %}
-{% endembed %}
-{% include 'home_page/_newsletter.html.twig' %}
-{% embed 'partials/_header.html.twig' %}
-    {% block header_title %}WYJAZDY TANECZNE DLA DOROSŁYCH OD LAT{% endblock %}
-    {% block header_subtitle %}JESTEŚMY DLA WAS JUŻ PONAD DEKADĘ! FEEL THE SALSA DZIAŁA OD 2012 ROKU. WYJAZDY TANECZNE TO NASZA SPECJALNOŚĆ OD 2014.
-UWIELBIAMY UCZYĆ WAS TAŃCA I ORGANIZOWAĆ NAJWIĘKSZE W POLSCE WYJAZDY TANECZNE DLA DOROSŁYCH.{% endblock %}
-{% endembed %}
-{% include 'home_page/_archive.html.twig' %}
+	{% embed 'partials/_header.html.twig' %}
+		{% block header_title %}
+			{{ 'home.headline' |trans({},'home_page')|upper }}
+		{% endblock %}
+		{% block header_subtitle %}
+			{{ 'home.subtitle' |trans({},'home_page')|upper }}
+		{% endblock %}
+	{% endembed %}
+	{% include 'home_page/_event_carousel.html.twig' %}
+	{% embed 'partials/_header.html.twig' %}
+		{% block header_title %}
+			{{ 'home.call_to_action' |trans({},'home_page')|upper }}
+		{% endblock %}
+		{% block header_subtitle %}{% endblock %}
+	{% endembed %}
+	{% include 'home_page/_example_video.html.twig' %}
+	{% embed 'partials/_header.html.twig' %}
+		{% block header_title %}
+			{{ 'home.love_dance' |trans({},'home_page')|upper }}
+		{% endblock %}
+		{% block header_subtitle %}{% endblock %}
+	{% endembed %}
+	{% include 'home_page/_newsletter.html.twig' %}
+	{% embed 'partials/_header.html.twig' %}
+		{% block header_title %}
+			{{ 'home.experience' |trans({},'home_page')|upper }}
+		{% endblock %}
+		{% block header_subtitle %}
+			{{ 'home.about_us' |trans({},'home_page')|upper }}
+		{% endblock %}
+	{% endembed %}
+	{% include 'home_page/_archive.html.twig' %}
 {% endblock %}

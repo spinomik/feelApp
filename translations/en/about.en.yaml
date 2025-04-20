@@ -1,41 +1,40 @@
-about:
-  title: 'ABOUT US'
-  subtitle: "THE BIGGEST DANCE TRIPS IN POLAND\nOr rather, dance and self-development retreats. Born out of love for dance and expanding awareness."
+title: 'ABOUT US'
+subtitle: "THE BIGGEST DANCE TRIPS IN POLAND\nOr rather, dance and self-development retreats. Born out of love for dance and expanding awareness."
 
-  paragraphs:
-    1:
-      title: 'Dance classes:'
-      desc: 'Bachata, Cuban salsa, zouk, linear salsa, urban kiz, and kizomba. Learning Latin dance has never been easier!'
-    2:
-      title: 'Self-development classes:'
-      desc: 'Fascial massage, tantra, breathwork, meditations, relaxation, and yoga. We’re constantly evolving and always surprising with something new.'
-    3:
-      title: 'A family-like atmosphere!'
-      desc: 'Although our dance camps gather hundreds of adults, the feedback from happy participants is clear – the atmosphere is like family! Full of kindness, warmth, and joy.'
-    4:
-      title: 'Dance camp theme'
-      desc: 'Each #FeelTheHoliday has a unique theme – focusing on different aspects of dance and… life. This way, we grow on many levels, explore new spaces, nobody gets bored, and some participants join us at every single event! That says a lot.'
-    5:
-      title: 'Our instructors'
-      desc: 'The best instructors from all over Poland, as always! Rest assured, you’ll learn to dance from the top talents of the Polish dance scene. It’s professional, exciting, and full of growth. Check who’s joining our team for the upcoming trip.'
-    6:
-      title: 'Dance workshops'
-      desc: 'Everyone is welcome – whether you want to polish your dance skills or start this beautiful journey. You’ll meet new people, and maybe even… fall in love. We’ve already seen a few love stories 🙂 Come solo or with a partner. Check the event page for a detailed program, main theme, and dance location (you’ll find upcoming adult dance trips at the top of the page).'
-    7:
-      title: 'Self-development workshops – take a vacation from life'
-      desc: 'If you want to better understand yourself, relax, or be present in the now, you’ll love our self-development workshops. These instructors will help us start the day right, deepen our relationships – including the one with ourselves. All you need is an open heart!'
-    8:
-      title: 'Latino parties'
-      desc: 'For the most dedicated, they literally last until breakfast. What’s beautiful here is that nothing is required, yet everything is possible. If you feel like it, dance until dawn; if you need rest, unwind in your room and return the next day for tons of valuable classes.<br><br> Our DJs are some of the most well-known names in Poland.<br><br> Oh, and surprise – one of the parties is always a costume party!'
-    9:
-      title: '3 dance trips a year!'
-      desc: 'Currently, we organize 3 editions per year. The spring edition reawakens and energizes you after winter. The summer edition is full of sunshine, joy, and fun – with beaches and water. The autumn edition soothes, relaxes, and brings a cozy mood and flow.'
-    10:
-      title: 'Themed parties'
-      desc: 'Despite the main themes, you’ll always spend your dance camp exactly the way you love. There’s never a shortage of craziness – but also time to relax or catch up with friends.'
-    11:
-      title: ''
-      desc: 'Follow our fanpage to stay up to date. Or even better – sign up for our dance newsletter!'
+paragraphs:
+  1:
+    title: 'Dance classes:'
+    desc: 'Bachata, Cuban salsa, zouk, linear salsa, urban kiz, and kizomba. Learning Latin dance has never been easier!'
+  2:
+    title: 'Self-development classes:'
+    desc: 'Fascial massage, tantra, breathwork, meditations, relaxation, and yoga. We’re constantly evolving and always surprising with something new.'
+  3:
+    title: 'A family-like atmosphere!'
+    desc: 'Although our dance camps gather hundreds of adults, the feedback from happy participants is clear – the atmosphere is like family! Full of kindness, warmth, and joy.'
+  4:
+    title: 'Dance camp theme'
+    desc: 'Each #FeelTheHoliday has a unique theme – focusing on different aspects of dance and… life. This way, we grow on many levels, explore new spaces, nobody gets bored, and some participants join us at every single event! That says a lot.'
+  5:
+    title: 'Our instructors'
+    desc: 'The best instructors from all over Poland, as always! Rest assured, you’ll learn to dance from the top talents of the Polish dance scene. It’s professional, exciting, and full of growth. Check who’s joining our team for the upcoming trip.'
+  6:
+    title: 'Dance workshops'
+    desc: 'Everyone is welcome – whether you want to polish your dance skills or start this beautiful journey. You’ll meet new people, and maybe even… fall in love. We’ve already seen a few love stories 🙂 Come solo or with a partner. Check the event page for a detailed program, main theme, and dance location (you’ll find upcoming adult dance trips at the top of the page).'
+  7:
+    title: 'Self-development workshops – take a vacation from life'
+    desc: 'If you want to better understand yourself, relax, or be present in the now, you’ll love our self-development workshops. These instructors will help us start the day right, deepen our relationships – including the one with ourselves. All you need is an open heart!'
+  8:
+    title: 'Latino parties'
+    desc: 'For the most dedicated, they literally last until breakfast. What’s beautiful here is that nothing is required, yet everything is possible. If you feel like it, dance until dawn; if you need rest, unwind in your room and return the next day for tons of valuable classes.<br><br> Our DJs are some of the most well-known names in Poland.<br><br> Oh, and surprise – one of the parties is always a costume party!'
+  9:
+    title: '3 dance trips a year!'
+    desc: 'Currently, we organize 3 editions per year. The spring edition reawakens and energizes you after winter. The summer edition is full of sunshine, joy, and fun – with beaches and water. The autumn edition soothes, relaxes, and brings a cozy mood and flow.'
+  10:
+    title: 'Themed parties'
+    desc: 'Despite the main themes, you’ll always spend your dance camp exactly the way you love. There’s never a shortage of craziness – but also time to relax or catch up with friends.'
+  11:
+    title: ''
+    desc: 'Follow our fanpage to stay up to date. Or even better – sign up for our dance newsletter!'
 
-  photo_desc: 'Dance trip organizers'
-  social_title: 'Follow us on:'
+photo_desc: 'Dance trip organizers'
+social_title: 'Follow us on:'

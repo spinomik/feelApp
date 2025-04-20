@@ -2,16 +2,16 @@
 {% trans_default_domain 'about' %}
 
 {% block title %}
-	{{ 'about.title'|trans}}
+	{{ 'title'|trans}}
 {% endblock %}
 
 {% block body %}
 	{% embed 'partials/_header.html.twig' %}
 		{% block header_title %}
-			{{ 'about.title'|trans({},'about') }}
+			{{ 'title'|trans({},'about') }}
 		{% endblock %}
 		{% block header_subtitle %}
-			{{ 'about.subtitle'|trans({},'about')|nl2br }}
+			{{ 'subtitle'|trans({},'about')|nl2br }}
 		{% endblock %}
 	{% endembed %}
 	<section class="container my-5">
@@ -21,7 +21,7 @@
 					<img src="{{ asset('images/about/organizators.jpg') }}" alt="zdjęcie organizatorów" class="card-img-top img-fluid rounded-top">
 					<div class="card-body">
 						<p class="card-text text-center">
-							{{ 'about.photo_desc'|trans }}
+							{{ 'photo_desc'|trans }}
 						</p>
 					</div>
 				</div>

@@ -1,3 +1,4 @@
+{% trans_default_domain 'home_page' %}
 <div class="container my-5 d-flex justify-content-center">
 	<div class="bg-white text-dark p-4" style="max-width: 500px;">
 		<div class="d-flex align-items-center justify-content-center">
@@ -7,7 +8,8 @@
 			</div>
 			<div>
 				<a href="{{ links.facebook_photos }}" class="btn btn-dark" target="_blank" rel="nofollow">
-					Obejrzyj zdjęcia z dawnych czasów 🙂
+					{{ 'archive.button' |trans }}
+					🙂
 				</a>
 			</div>
 		</div>
