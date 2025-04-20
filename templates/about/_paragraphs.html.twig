@@ -1,0 +1,17 @@
+{% trans_default_domain 'about' %}
+<div class="col-lg-6">
+	{% set i = 1 %}
+	{% for i in 1..11 %}
+		{% set title = ('about.paragraphs.' ~ i ~ '.title')|trans %}
+		{% set desc = ('about.paragraphs.' ~ i ~ '.desc')|trans %}
+
+		{% if title != 'about.paragraphs.' ~ i ~ '.title' or desc != 'about.paragraphs.' ~ i ~ '.desc' %}
+			<div class="mb-4">
+				{% if title is not empty %}
+					<h5 class="fw-bold">{{ title }}</h5>
+				{% endif %}
+				<p>{{ desc|raw }}</p>
+			</div>
+		{% endif %}
+	{% endfor %}
+</div>

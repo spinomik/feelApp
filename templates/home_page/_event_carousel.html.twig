@@ -1,38 +1,44 @@
 <div id="eventCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
-    <div class="carousel-inner">
+	<div class="carousel-inner">
 
-        {% for i in 0..3 %}
-        <div class="carousel-item {% if i == 0 %}active{% endif %}">
-            <div class="card bg-dark text-light border-0">
-                <div class="row g-0 p-4">
-                    <div class="col-md-4">
-                        <img src="{{ asset('images/home_page/logo-event.png') }}" class="img-fluid rounded-start" alt="Event {{ i + 1 }}">
-                    </div>
-                    <div class="col-md-8 d-flex flex-column justify-content-center">
-                        <div class="card-body">
-                            <h3 class="card-title">Wydarzenie {{ i + 1 }}</h3>
-                            <p class="card-text">Opis wydarzenia nr {{ i + 1 }}. Trochę tekstu o tym co się będzie działo, jaka muzyka, kto prowadzi i jakie są atrakcje.</p>
-                            <p class="card-text mb-1"><i class="bi bi-calendar-event"></i> Termin: 12–15 czerwca 2025</p>
-                            <p class="card-text mb-2"><i class="bi bi-cash"></i> Cena: 799 PLN</p>
-                            <div class="d-flex gap-2">
-                                <a href="{{ path('app_home_page') }}" class="btn btn-primary">Zapisz się!</a>
-                                <a href="{{ path('app_home_page') }}" class="btn btn-outline-light">Więcej informacji</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% endfor %}
+		{% for i in 0..3 %}
+			<div class="carousel-item {% if i == 0 %}active{% endif %}">
+				<div class="card bg-dark text-light border-0">
+					<div class="row g-0 p-4">
+						<div class="col-md-4">
+							<img src="{{ asset('images/home_page/logo-event.png') }}" class="img-fluid rounded-start" alt="Event {{ i + 1 }}">
+						</div>
+						<div class="col-md-8 d-flex flex-column justify-content-center">
+							<div class="card-body">
+								<h3 class="card-title">Wydarzenie
+									{{ i + 1 }}</h3>
+								<p class="card-text">Opis wydarzenia nr
+									{{ i + 1 }}. Trochę tekstu o tym co się będzie działo, jaka muzyka, kto prowadzi i jakie są atrakcje.</p>
+								<p class="card-text mb-1">
+									<i class="bi bi-calendar-event"></i>
+									Termin: 12–15 czerwca 2025</p>
+								<p class="card-text mb-2">
+									<i class="bi bi-cash"></i>
+									Cena: 799 PLN</p>
+								<div class="d-flex gap-2">
+									<a href="{#{{ path('change_me') }}#}" class="btn btn-primary">Zapisz się!</a>
+									<a href="{#{{ path('change_me') }}#}" class="btn btn-outline-light">Więcej informacji</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
 
-    </div>
+	</div>
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Poprzedni</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Następny</span>
-    </button>
+	<button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Poprzedni</span>
+	</button>
+	<button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Następny</span>
+	</button>
 </div>

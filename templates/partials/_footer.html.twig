@@ -1,45 +1,76 @@
 <footer class="bg-dark text-light py-3">
-  <div class="container">
-    <div class="row">
+	<div class="container">
+		<div
+			class="row">
 
-      <!-- Linki prawne i społecznościowe -->
-      <div class="col-md-4 mb-2">
-        <ul class="list-unstyled">
-          <li><a class="text-light text-decoration-none" href="https://feeltheholiday.pl/regulamin-serwisu-internetowego/"><i class="bi bi-link"></i> Regulamin serwisu internetowego</a></li>
-          <li><a class="text-light text-decoration-none" href="https://feeltheholiday.pl/regulamin-wydarzenia-feeltheholiday/"><i class="bi bi-link"></i> Regulamin wydarzenia</a></li>
-          <li><a class="text-light text-decoration-none" href="https://feeltheholiday.pl/polityka-prywatnosci/"><i class="bi bi-link"></i> Polityka prywatności</a></li>
-          <li><a class="text-light text-decoration-none" href="https://feeltheholiday.pl/procedura-realizacji-polityki-bezpieczenstwa-sanitarnego/"><i class="bi bi-link"></i> Procedura bezpieczeństwa</a></li>
-          <li><a class="text-light text-decoration-none" href="https://www.facebook.com/groups/428031304971424" target="_blank"><i class="bi bi-link"></i> Grupa Przyjaciele FTS</a></li>
-          <li><a class="text-light text-decoration-none" href="https://www.facebook.com/FeelTheSalsa" target="_blank"><i class="bi bi-link"></i> Fanpage</a></li>
-          <li><a class="text-light text-decoration-none" href="https://www.instagram.com/feelthesalsa/" target="_blank"><i class="bi bi-link"></i> Instagram</a></li>
-        </ul>
-      </div>
+			<!-- Linki prawne i społecznościowe -->
+			<div class="col-md-4 mb-2">
+				<ul class="list-unstyled">
+					<li>
+						<a class="text-light text-decoration-none" href="{#{{ path('change_me') }}#}">
+							<i class="bi bi-link"></i>
+							Regulamin serwisu internetowego</a>
+					</li>
+					<li>
+						<a class="text-light text-decoration-none" href="{#{{ path('change_me') }}#}">
+							<i class="bi bi-link"></i>
+							Regulamin wydarzenia</a>
+					</li>
+					<li>
+						<a class="text-light text-decoration-none" href="{#{{ path('change_me') }}#}">
+							<i class="bi bi-link"></i>
+							Polityka prywatności</a>
+					</li>
+					<li>
+						<a class="text-light text-decoration-none" href="{#{{ path('change_me') }}#}">
+							<i class="bi bi-link"></i>
+							Procedura bezpieczeństwa</a>
+					</li>
+					<li>
+						<a class="text-light text-decoration-none" href="{{ links.facebook_friends }}" target="_blank">
+							<i class="bi bi-link"></i>
+							Grupa Przyjaciele FTS</a>
+					</li>
+					<li>
+						<a class="text-light text-decoration-none" href="{{ links.facebook }}" target="_blank">
+							<i class="bi bi-link"></i>
+							Fanpage</a>
+					</li>
+					<li>
+						<a class="text-light text-decoration-none" href="{{ links.instagram }}" target="_blank">
+							<i class="bi bi-link"></i>
+							Instagram</a>
+					</li>
+				</ul>
+			</div>
 
-      <!-- Dane firmy i newsletter -->
-      <div class="col-md-4 mb-2">
-        <p class="mb-3">
-          © 2013–2024 FEELTHEHOLIDAY sp. z o.o.<br>
-          ul. Niedźwiedzia 29B, Warszawa<br>
-          NIP: 5213920112<br>
-          REGON: 388205750<br>
-          KRS: 0000883357
-        </p>
-        <p>
-          <a href="https://feeltheholiday.pl/newsletter/" class="btn btn-outline-light btn-sm">
-            Dołącz do newslettera
-          </a>
-        </p>
-      </div>
+			<!-- Dane firmy i newsletter -->
+			<div class="col-md-4 mb-2">
+				<p class="mb-3">
+					© 2013–2024 FEELTHEHOLIDAY sp. z o.o.<br>
+					ul. Niedźwiedzia 29B, Warszawa<br>
+					NIP: 5213920112<br>
+					REGON: 388205750<br>
+					KRS: 0000883357
+				</p>
+				<p>
+					<a href="{#{{ path('change_me') }}#}" class="btn btn-outline-light btn-sm">
+						Dołącz do newslettera
+					</a>
+				</p>
+			</div>
 
-      <!-- Płatności -->
-      <div class="col-md-4 text-center">
-        <p class="">DOSTĘPNE FORMY PŁATNOŚCI:</p>
-        <img src="{{ asset('images/formy-platnosci.png') }}" alt="Formy płatności" class="img-fluid" style="max-width: 100%; height: auto;">
-      </div>
-    </div>
+			<!-- Płatności -->
+			<div class="col-md-4 text-center">
+				<p class="">DOSTĘPNE FORMY PŁATNOŚCI:</p>
+				<img src="{{ asset('images/formy-platnosci.png') }}" alt="Formy płatności" class="img-fluid" style="max-width: 100%; height: auto;">
+			</div>
+		</div>
 
-    <div class="text-center">
-      <small>&copy; {{ "now"|date("Y") }} FeelTheHoliday – Wszelkie prawa zastrzeżone</small>
-    </div>
-  </div>
+		<div class="text-center">
+			<small>&copy;
+				{{ "now"|date("Y") }}
+				FeelTheHoliday – Wszelkie prawa zastrzeżone</small>
+		</div>
+	</div>
 </footer>
