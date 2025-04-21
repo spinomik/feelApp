@@ -1,0 +1,24 @@
+title: 'About Cookies'
+subtitle: '"Cookie" policy of https://feeltheholiday.pl/'
+
+paragraphs:
+  1:
+    content: "By “cookies” we mean computer data stored on the users' terminal equipment, intended for use on the websites. In particular, these are text files, containing the name of the website from which they come, the time they are stored on the end device and a unique number."
+  2:
+    content: 'The website does not automatically collect any information, except for the information contained in cookies.'
+  3:
+    content: "Cookies are intended for use with the service's website, and we use them for the following purposes:<ol><li>enabling user login and maintaining the user session on each subsequent page of the website</li><li>customizing the website content to the individual preferences of the user, primarily these files recognize the user's device to display the page according to their preferences</li><li>creating anonymous statistics, excluding the possibility of identifying the user.</li></ol>"
+  4:
+    content: "Cookies used by our partners (listed in the Privacy Policy) of the website operator, including, in particular, website users, are subject to the partners' own privacy policies."
+  5:
+    content: 'Out of concern for the security of the data entrusted to us, we have developed internal procedures and recommendations to prevent data from being made available to unauthorized persons. We control their execution and constantly check their compliance with the relevant legal acts - the Law on Personal Data Protection, the Law on Provision of Electronic Services, as well as all kinds of executive acts and acts of Community law.'
+  6:
+    content: 'We use two types of cookies:<ol><li><strong>Session cookies</strong> - remain on your device until you leave the website or close your web browser</li><li><strong>Persistent cookies</strong> - remain on your device for a specified period or until manually deleted.</li></ol>'
+  7:
+    content: 'With the help of cookie technology, we only collect anonymous statistical data about you for the purpose of improving the convenience of the portal and minimizing the annoyance of advertisements. We do not collect any data that allows us to identify you. The only information about you, which, however, without being combined with other data, does not allow you to be identified, is the IP address from which you connect. Your IP address may also be transmitted to our partners, including Google. However, again, your identification based on this data is not possible.'
+  8:
+    content: "By default, web browsing software allows cookies to be placed on the User's terminal device. These settings can be changed by the user in such a way as to block the automatic handling of “cookies” in the settings of the web browser or inform about their transmission to the user's device each time."
+  9:
+    content: 'You can change your cookie settings at any time. Detailed information on how to manage and handle cookies is available in the software settings (web browser).<p>Examples of editing options in popular browsers:</p><ul><li>Mozilla Firefox: www.support.mozilla.org/pl/kb/ciasteczka</li><li>Internet Explorer: www.support.microsoft.com/kb/278835/pl</li><li>Google Chrome: www.support.google.com/chrome/bin/answer.py?hl=pl&answer=95647</li><li>Safari: www.safari.helpmax.net/pl/oszczedzanie-czasu/blokowanie-zawartosci/</li><li>Opera: https://help.opera.com/pl/latest/web-preferences/#cookies</li></ul>'
+  10:
+    content: 'Please be advised that changes in your browser settings may prevent the proper operation of the Websites.'

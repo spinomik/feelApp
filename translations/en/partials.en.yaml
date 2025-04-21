@@ -1,15 +1,16 @@
 footer:
-  reg: 'Regulations'
-  reg_event: 'Event Regulations'
+  terms_of_service: 'Regulations of the web service'
+  event_terms: 'Event Regulations'
   fb_friends: 'FeelTheSalsa Friends Group'
-  privacy: 'Privacy Policy'
-  security: 'Safety Procedure'
+  privacy_policy: 'Privacy Policy'
+  safety_procedure: 'Procedure for implementing the sanitary safety policy'
   fanpage: 'Fanpage'
   instagram: 'Instagram'
   newsletter: 'Join the Newsletter'
   payments: 'AVAILABLE PAYMENT METHODS:'
   copyright: 'FeelTheHoliday – All rights reserved'
   company: '© 2013–2024 FEELTHEHOLIDAY Ltd.<br>ul. Niedźwiedzia 29B, Warsaw<br>VAT ID: 5213920112<br>REGON: 388205750<br>KRS: 0000883357'
+  cookies: 'Cookies'
 
 navbar:
   events: 'Upcoming Events'

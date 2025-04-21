@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+{% trans_default_domain 'terms_of_service' %}
+
+{% block title %}
+	{{ 'title'|trans}}
+{% endblock %}
+
+{% block body %}
+	{% embed 'partials/_header.html.twig' %}
+		{% block header_title %}
+			{{ 'title'|trans({},'terms_of_service') }}
+		{% endblock %}
+		{% block header_subtitle %}{% endblock %}
+	{% endembed %}
+
+	<section class="container my-5">
+		{% for i in 1..14 %}
+			<div class="mb-5">
+				<p class="text-center fw-bold">§
+					{{ i }}</p>
+				<h2 class="text-center h5 mb-3">{{ ('paragraphs.' ~ i ~ '.title')|trans }}</h2>
+				<p class="text-justify" style="text-align: justify;">
+					{{ ('paragraphs.' ~ i ~ '.content')|trans|raw }}
+				</p>
+			</div>
+		{% endfor %}
+	</section>
+{% endblock %}

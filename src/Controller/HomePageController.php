@@ -19,4 +19,16 @@ final class HomePageController extends AbstractController
     {
         return $this->render('about/index.html.twig', []);
     }
+
+    #[Route('/contact', name: 'app_contact')]
+    public function contact(): Response
+    {
+        return $this->render('contact/index.html.twig', []);
+    }
+
+    #[Route('/archive', name: 'app_archive')]
+    public function archive(): Response
+    {
+        return $this->render('archive/index.html.twig', []);
+    }
 }

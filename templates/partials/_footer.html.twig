@@ -8,24 +8,29 @@
 			<div class="col-md-4 mb-2">
 				<ul class="list-unstyled">
 					<li>
-						<a class="text-light text-decoration-none" href="{#{{ path('change_me') }}#}">
+						<a class="text-light text-decoration-none" href="{{ path('app_policies_terms_of_service') }}">
 							<i class="bi bi-link"></i>
-							{{ 'footer.reg'|trans }}</a>
+							{{ 'footer.terms_of_service'|trans }}</a>
 					</li>
 					<li>
-						<a class="text-light text-decoration-none" href="{#{{ path('change_me') }}#}">
+						<a class="text-light text-decoration-none" href="{{ path('app_policies_event_terms') }}">
 							<i class="bi bi-link"></i>
-							{{ 'footer.reg_event'|trans }}</a>
+							{{ 'footer.event_terms'|trans }}</a>
 					</li>
 					<li>
-						<a class="text-light text-decoration-none" href="{#{{ path('change_me') }}#}">
+						<a class="text-light text-decoration-none" href="{{ path('app_policies_privacy_policy') }}">
 							<i class="bi bi-link"></i>
-							{{ 'footer.privacy'|trans }}</a>
+							{{ 'footer.privacy_policy'|trans }}</a>
 					</li>
 					<li>
-						<a class="text-light text-decoration-none" href="{#{{ path('change_me') }}#}">
+						<a class="text-light text-decoration-none" href="{{ path('app_policies_safety_procedure') }}">
 							<i class="bi bi-link"></i>
-							{{ 'footer.security'|trans }}</a>
+							{{ 'footer.safety_procedure'|trans }}</a>
+					</li>
+					<li>
+						<a class="text-light text-decoration-none" href="{{ path('app_policies_cookies') }}">
+							<i class="bi bi-link"></i>
+							{{ 'footer.cookies'|trans }}</a>
 					</li>
 					<li>
 						<a class="text-light text-decoration-none" href="{{ links.facebook_friends }}" target="_blank">

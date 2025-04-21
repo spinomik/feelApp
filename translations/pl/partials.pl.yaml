@@ -1,15 +1,16 @@
 footer:
-  reg: 'Regulamin'
-  reg_event: 'Regulamin wydarzenia'
+  terms_of_service: 'Regulamin serwisu internetowego'
+  event_terms: 'Regulamin wydarzenia'
   fb_friends: 'Grupa Przyjaciele FTS'
-  privacy: 'Polityka prywatności'
-  security: 'Procedura bezpieczeństwa'
+  privacy_policy: 'Polityka prywatności'
+  safety_procedure: 'Procedura realizacji polityki bezpieczeństwa sanitarnego'
   fanpage: 'Fanpage'
   instagram: 'Instagram'
   newsletter: 'Dołącz do newslettera'
   payments: 'DOSTĘPNE FORMY PŁATNOŚCI:'
   copyright: 'FeelTheHoliday – Wszelkie prawa zastrzeżone'
   company: '© 2013–2024 FEELTHEHOLIDAY sp. z o.o.<br>ul. Niedźwiedzia 29B, Warszawa<br>NIP: 5213920112<br>REGON: 388205750<br>KRS: 0000883357'
+  cookies: 'Ciasteczka'
 
 navbar:
   events: 'Najblisze Eventy'
