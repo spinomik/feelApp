@@ -10,21 +10,21 @@ class LocaleSubscriber implements EventSubscriberInterface
 {
     private string $defaultLocale;
 
-    public function __construct(string $defaultLocale = 'pl')
+    public function __construct(string $defaultLocale = 'en')
     {
         $this->defaultLocale = $defaultLocale;
     }
 
-    public function onKernelRequest(RequestEvent $event)
+    public function onKernelRequest(RequestEvent $event): void
     {
         $request = $event->getRequest();
 
         if (!$request->hasPreviousSession()) {
-            return;
+            $locale = $request->cookies->get('_locale', $this->defaultLocale);
+            $request->setLocale($locale);
+        } else {
+            $request->setLocale($request->getSession()->get('_locale', $this->defaultLocale));
         }
-
-        $locale = $request->get('_locale', $request->getSession()->get('_locale', $this->defaultLocale));
-        $request->setLocale($locale);
     }
 
     public static function getSubscribedEvents(): array

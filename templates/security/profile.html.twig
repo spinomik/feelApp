@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+{% trans_default_domain 'profile' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+	{% embed 'partials/_header.html.twig' %}
+		{% block header_title %}
+			{{ 'title'|trans({},'profile') }}
+		{% endblock %}
+		{% block header_subtitle %}{% endblock %}
+	{% endembed %}
+{% endblock %}
